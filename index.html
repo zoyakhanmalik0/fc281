@@ -374,4 +374,12 @@
       </a>
     </nav>
   </body>
+  <script>
+  document.getElementById("playVideo").addEventListener("click", function () {
+    document.getElementById("videoCover").style.display = "none";
+
+    const iframe = document.querySelector("#youtubeVideo iframe");
+    iframe.src = "https://www.youtube.com/embed/5TPR8na51NM?autoplay=1";
+  });
+</script>
 </html>
