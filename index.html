@@ -77,19 +77,35 @@
           </a>
         </section>
 
-     <!-- Screenshot/ad preview section -->
-<section class="media-strip" aria-label="App screenshots">
+<section class="media-strip" aria-label="App promotional video">
   <figure class="video-embed" aria-label="Promotional video">
-    <div class="embed-responsive">
-      <iframe
-        src="https://www.youtube.com/embed/5TPR8na51NM"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
+
+    <div class="video-wrapper" id="videoWrapper">
+      <!-- Cover image -->
+      <div class="video-cover" id="videoCover">
+        <img
+          src="images/video-cover.jpg"
+          alt="Promotional video cover"
+        />
+
+        <button class="play-button" id="playVideo" aria-label="Play promotional video">
+          ▶
+        </button>
+      </div>
+
+      <!-- YouTube video -->
+      <div class="embed-responsive" id="youtubeVideo">
+        <iframe
+          src="https://www.youtube.com/embed/5TPR8na51NM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
+
     <figcaption>Promo video</figcaption>
   </figure>
 </section>
